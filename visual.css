@@ -1,0 +1,96 @@
+*
+{
+    scroll-behavior:smooth;
+}
+
+:root
+{
+    --orange: #BB2649;
+    --yellow: #000000; 
+
+}
+body
+{
+    background: var(--orange);  /* fallback for old browsers */
+    background: linear-gradient(to right top, var(--yellow), var(--orange));
+    margin:0%;
+    padding: 0%;
+    width: 100vw;;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.flex-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flexbox
+{
+    width:200px;
+    height: 200px;
+    background: rgba(0,0, 0, 0.60); 
+    background: slinear-gradient(to left top, rgba (0,0,0,rgba(0,0,0, 0.60), rgba(0,0, 0, 0.25)));
+border-radius: 30px;
+
+    color: white;
+    border-radius: 5 0px;
+    margin: 22px 12px 12px 12px;
+    position: relative;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+
+}
+
+
+.background_image
+{
+  
+position: absolute;
+
+
+}.background_image--button{
+width: 100vw;
+height: 100vh;
+top: 0;
+right: 30%;
+animation: slideDown 6s  linear infinite;
+
+
+}
+.background_image--dots
+{
+    bottom: 50%;
+    left: 70%;
+    height: 75vh;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes slideDown {
+    from {transform: translateY(-40vh)}
+    to {transform: translateY(100vh)}
+}
+@keyframes rotate
+{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.img {
+   opacity: 60%;
+    justify-items: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    
+}
+ .img:hover
+ {
+    opacity: 110%;
+    animation: 4s;
+ }
